@@ -1,0 +1,113 @@
+.login__container{
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 12rem;
+}
+.login__title{
+  text-align: center;
+  img{
+    width: 5rem;
+  }
+}
+.login__header{
+  text-align: center;
+}
+.login__box{
+  border-radius: 1rem;
+  padding: 1rem;
+  width: 20rem;
+  margin: 0 auto;
+  display: grid;
+  align-items: center;
+  border:1px solid rgba(235, 235, 235, 0.38) ;
+  background-color: rgba(235, 235, 235, 0.18) ;;
+  justify-content: center;
+}
+::placeholder{
+  color: white;
+}
+#E input {
+  border: transparent;
+  background-color:rgba(235, 235, 235, 0.58) ;
+  padding: 0.65rem;
+  margin-bottom: 1rem;
+  border-radius: 10rem;
+  width: 10rem;
+}
+#P input {
+  border: transparent;
+  background-color:rgba(235, 235, 235, 0.58) ;
+  padding: 0.65rem;
+  border-radius: 10rem;
+  width: 10rem;
+  margin: 0 auto;
+}
+
+.login__submit{
+  margin: 1rem;
+  text-align: center;
+}
+
+.login__button{
+  background-color: #ff5959;
+  width: 7rem;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  border: transparent;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.login__button:hover{
+  background-color: #f11b1b;
+}
+
+.login__viewers{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  img{
+    width: 15rem;
+    margin-top: 1rem;
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+    &:hover{
+      transform: scale(1.1);
+    }
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .login__viewers{
+    display: flex;
+    transform: scale(0.2);
+    img{
+      height: 30rem;
+      width: auto;
+      cursor: pointer;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .login__container{
+    margin: 0 auto;
+    display: grid;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    overflow: hidden;
+    padding-top: 8rem;
+  }
+  .login__viewers{
+    display: flex;
+    transform: scale(0.2);
+    img{
+      height: 15rem;
+      width: auto;
+      cursor: pointer;
+    }
+  }
+}
